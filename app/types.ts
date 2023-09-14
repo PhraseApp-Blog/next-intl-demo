@@ -17,5 +17,6 @@ export interface Article {
   author: string;
   publishedAt: string;
   imgUrl?: string;
+  sourceUrl: string;
   translations: ArticleTranslations;
 }
