@@ -20,6 +20,10 @@ export default function Header() {
           </div>
         </div>
       </Link>
+
+      <Link href="/about" className="-mt-1 ml-6">
+        About
+      </Link>
     </header>
   );
 }
