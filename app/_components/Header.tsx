@@ -10,7 +10,7 @@ export default function Header() {
       <Link href="/" className="flex items-center">
         <Image
           src="/dirkha-logo.svg"
-          alt="Dirkha Logo"
+          alt={t("logoAlt")}
           width={50}
           height={50}
           className="relative -right-[2px] h-10 w-10 "
@@ -19,13 +19,13 @@ export default function Header() {
         <div className="flex flex-col">
           <div className="text-2xl font-bold text-lime-900">{t("title")}</div>
           <div className="-mt-1 text-xs font-light text-lime-900">
-            Good Green News
+            {t("subtitle")}
           </div>
         </div>
       </Link>
 
       <Link href="/about" className="-mt-1 ml-6">
-        About
+        {t("nav.about")}
       </Link>
     </header>
   );
