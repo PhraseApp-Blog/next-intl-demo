@@ -12,7 +12,7 @@ export default async function Home() {
   const { featured, feed } = data;
 
   return (
-    <main className="px-4 py-2">
+    <main className="mx-auto max-w-[700px] px-4 py-2">
       <div className="flex">
         <div className="w-1/2 shrink-0">
           <div className="mb-2 text-sm font-light text-lime-900">
