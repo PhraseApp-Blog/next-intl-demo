@@ -1,6 +1,13 @@
-import Image from "next/image";
+import FeaturedArticle from "./_components/FeaturedArticle";
+import { ApiData } from "./types";
 
-export default function Home() {
+export default async function Home() {
+  const data: ApiData = await fetch("http://127.0.0.1:4000").then((res) =>
+    res.json(),
+  );
+
+  const { featured } = data;
+
   return (
     <main className="px-4 py-2">
       <div className="flex">
@@ -10,23 +17,7 @@ export default function Home() {
               Featured story
             </span>
           </div>
-          <article className="relative h-[225px] w-full overflow-hidden rounded-md">
-            <Image
-              src="/stories/ben-stern-4n96lyJd2Xs-unsplash.jpg"
-              alt="Image of oyester shells"
-              fill={true}
-              className="w-full"
-            />
-            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-lime-950 to-lime-950/10 p-4">
-              <h2 className="text-xl font-bold text-lime-200 drop-shadow-md">
-                Cutting France's energy costs with discarded oyster shells
-              </h2>
-              <div className="flex items-baseline justify-between">
-                <p className="text-stone-100">by Hannah Brown</p>
-                <p className="text-xs text-stone-300">2023/08/23</p>
-              </div>
-            </div>
-          </article>
+          <FeaturedArticle article={featured} />
         </div>
 
         <div className="ml-4">

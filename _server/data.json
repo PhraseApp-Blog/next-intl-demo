@@ -1,0 +1,35 @@
+{
+  "featured": {
+    "id": "7d9b3c04-1e8a-4db7-a982-6f5e8729d5a7",
+    "author": "Hannah Brown",
+    "publishedAt": "2023-08-23",
+    "imgUrl": "/stories/ben-stern-4n96lyJd2Xs-unsplash.jpg",
+    "translations": {
+      "en-US": {
+        "title": "The paint made from oyster shells could cool your home by 7°C",
+        "body": "Cool Roof France (CRF) uses discarded oyster shells to create thermo-reflective roof paint that reduces building temperatures by up to seven degrees Celsius. This innovation cuts energy consumption for air conditioning by 30-50%. CRF has successfully applied this paint to various buildings, including hospitals and offices, and it can also help counter the urban heat island effect. For those interested, CRF sells this paint online and allocates 10% of profits to support projects in heat-vulnerable regions like Senegal. This sustainable approach offers a promising way to cool buildings, conserve energy, and aid communities in a warming world."
+      },
+      "ar-EG": {
+        "title": "الطلاء المصنوع من قشر الأسماك يمكن أن يبرد منزلك بمقدار 7 درجات مئوية",
+        "body": "كول روف فرنسا (CRF) تستخدم قشور الأوستر المهملة لإنتاج طلاء للسقف يعكس الحرارة ويخفض درجات حرارة المباني بمقدار يصل إلى سبع درجات مئوية. هذا الابتكار يقلل استهلاك الطاقة الناتج عن تشغيل أجهزة التكييف بنسبة 30-50٪. نجحت CRF في تطبيق هذا الطلاء بنجاح على مبانٍ متنوعة، بما في ذلك المستشفيات والمكاتب، ويمكن أن يساعد أيضًا في مكافحة ظاهرة 'جزيرة الحرارة الحضرية'. بالنسبة لأولئك الذين يهتمون، تبيع CRF هذا الطلاء عبر الإنترنت وتخصص 10٪ من الأرباح لدعم مشاريع في مناطق معرضة للحرارة مثل السنغال. هذا النهج المستدام يقدم وسيلة واعدة لتبريد المباني وتوفير الطاقة ومساعدة المجتمعات في عالم يشهد ارتفاعًا في درجات الحرارة."
+      }
+    }
+  },
+  "feed": [
+    {
+      "id": "f28e58f1-56f7-4b2b-9d9c-eb5a4a6e25d3",
+      "author": "Euronews Green with AP",
+      "publishedAt": "2023-08-15",
+      "translations": {
+        "en-US": {
+          "title": "🙌 Major win: Young climate activists score historic victory in US court",
+          "body": "A US court has ruled that children have a constitutional right to a healthy environment in a landmark climate change trial in Montana. The case, led by young plaintiffs aged five to 22, argued that the state was violating their constitutional rights by permitting fossil fuel development without considering its environmental impact, particularly greenhouse gas emissions. This marks the first US court ruling against a government for violating constitutional rights linked to climate change. While it sets a crucial precedent, immediate impacts are limited, and the state plans to appeal the decision."
+        },
+        "ar-EG": {
+          "title": "🙌 فوز كبير: يحرز النشطاء الشباب في مجال المناخ انتصارًا تاريخيًا في المحكمة الأمريكية",
+          "body": "محكمة في الولايات المتحدة قضت بأن لدى الأطفال الحق الدستوري في بيئة صحية في معركة قانونية رائدة في مونتانا. قاد الأطفال الناشطين في مجال البيئة هذه الحالة، حيث اعتبروا أن الدولة تنتهك حقوقهم الدستورية من خلال السماح بتنمية الوقود الأحفوري دون النظر في تأثيرها البيئي، ولا سيما انبعاثات غازات الاحتباس الحراري. يشكل هذا الحكم الأول من نوعه في المحكمة الأمريكية ضد حكومة بسبب انتهاك حقوق دستورية تتعلق بتغير المناخ. على الرغم من أنه يمهد الطريق لتحديد سابقة مهمة، إلا أن التأثيرات الفورية محدودة، والولاية تخطط للاستئناف ضد القرار."
+        }
+      }
+    }
+  ]
+}
