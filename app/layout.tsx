@@ -1,19 +1,19 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Header from './_components/Header'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Header from "./_components/Header";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Dirkha - Good Green News',
-  description: 'Created using Next.js',
-}
+  title: "Dirkha - Good Green News",
+  description: "Created using Next.js",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -22,5 +22,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
