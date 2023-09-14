@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex items-center bg-lime-100 px-2 pb-2 pt-1">
+    <header className="flex items-center bg-lime-100 px-2 pb-2 pt-1 shadow-sm shadow-lime-950/5">
       <Image
         src="/dirkha-logo.svg"
         alt="Dirkha Logo"
