@@ -1,6 +1,6 @@
-import ArticleTeaser from "./_components/ArticleTeaser";
-import FeaturedArticle from "./_components/FeaturedArticle";
-import { ApiData } from "./types";
+import ArticleTeaser from "../_components/ArticleTeaser";
+import FeaturedArticle from "../_components/FeaturedArticle";
+import { ApiData } from "../types";
 
 export default async function Home() {
   const data: ApiData = await fetch(process.env.API_URL!, {
