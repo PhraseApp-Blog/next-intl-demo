@@ -3,8 +3,10 @@ import FeaturedArticle from "./_components/FeaturedArticle";
 import { ApiData } from "./types";
 
 export default async function Home() {
-  const data: ApiData = await fetch("http://127.0.0.1:4000", {
-    next: { revalidate: 1 },
+  const data: ApiData = await fetch(process.env.API_URL!, {
+    next: {
+      revalidate: +process.env.DEFAULT_CACHE_DURATION_IN_SECONDS!,
+    },
   }).then((res) => res.json());
 
   const { featured, feed } = data;
