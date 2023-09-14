@@ -5,11 +5,11 @@ const port = 4000;
 
 const app = express();
 
-const data = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "data.json"), "utf8"),
-);
-
 app.get("/", (_req, res) => {
+  const data = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "data.json"), "utf8"),
+  );
+
   // Fake a server wait time
   return new Promise((resolve) => {
     setTimeout(() => {

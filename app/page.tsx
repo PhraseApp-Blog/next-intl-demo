@@ -1,12 +1,13 @@
+import ArticleTeaser from "./_components/ArticleTeaser";
 import FeaturedArticle from "./_components/FeaturedArticle";
 import { ApiData } from "./types";
 
 export default async function Home() {
-  const data: ApiData = await fetch("http://127.0.0.1:4000").then((res) =>
-    res.json(),
-  );
+  const data: ApiData = await fetch("http://127.0.0.1:4000", {
+    next: { revalidate: 1 },
+  }).then((res) => res.json());
 
-  const { featured } = data;
+  const { featured, feed } = data;
 
   return (
     <main className="px-4 py-2">
@@ -26,37 +27,12 @@ export default async function Home() {
               The grapevine
             </span>
             <span className="inline-block rounded-sm bg-lime-50/40 px-1 text-xs">
-              3 stories
+              {feed.length} stories
             </span>
           </div>
-          <article className="mb-2 border-b-[0.5px] border-lime-300 pb-3">
-            <h2 className="text-sm">
-              🧺 Montana court rules children have right to a healthy
-              environment in major blow to fossil fuels
-            </h2>
-            <div className="flex items-baseline justify-between text-xs font-light text-stone-500">
-              <p>by Euronews Green with AP</p>
-              <p>2023/08/15</p>
-            </div>
-          </article>
-          <article className="mb-2 border-b-[0.5px] border-lime-300 pb-3">
-            <h2 className="text-sm">
-              🌳 India slashes emissions rate by one-third in 14 years
-            </h2>
-            <div className="flex items-baseline justify-between text-xs font-light text-stone-500">
-              <p>by Euronews Green with Reuters</p>
-              <p>2023/08/10</p>
-            </div>
-          </article>
-          <article className="">
-            <h2 className="text-sm">
-              🧑‍🔧 Locals fix their broken items for free at this repair cafe
-            </h2>
-            <div className="flex items-baseline justify-between text-xs font-light text-stone-500">
-              <p>by Angela Symons</p>
-              <p>2023/08/04</p>
-            </div>
-          </article>
+          {feed.map((article) => (
+            <ArticleTeaser article={article} key={article.id} />
+          ))}
         </div>
       </div>
     </main>
