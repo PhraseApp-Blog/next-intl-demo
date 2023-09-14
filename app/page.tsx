@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className="ml-4">
-          <div className="mb-1 flex items-baseline justify-between text-sm font-light text-lime-900">
+          <div className="mb-2 flex items-baseline justify-between text-sm font-light text-lime-900">
             <span className="-ml-1 rounded-sm bg-lime-50 px-1">
               The grapevine
             </span>
