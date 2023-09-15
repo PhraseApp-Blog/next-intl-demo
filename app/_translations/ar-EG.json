@@ -1,4 +1,8 @@
 {
+  "useLocaleNames": {
+    "en-US": "الإنجليزية (English)",
+    "ar-EG": "العربية"
+  },
   "Header": {
     "title": "دِرخَة",
     "subtitle": "أخبار بيئية إيجابية",

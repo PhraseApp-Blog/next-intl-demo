@@ -1,10 +1,12 @@
 import { useTranslations } from "next-intl";
 import Link from "next-intl/link";
 import Image from "next/image";
+import useLocaleNames from "../_hooks/useLocaleNames";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header() {
   const t = useTranslations("Header");
+  const localeNames = useLocaleNames();
 
   return (
     <header className=" bg-lime-100 px-2 pb-2 pt-1 shadow-sm shadow-lime-950/5">
@@ -32,7 +34,7 @@ export default function Header() {
           </Link>
         </div>
         <div>
-          <LocaleSwitcher />
+          <LocaleSwitcher localeNames={localeNames} />
         </div>
       </div>
     </header>

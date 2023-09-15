@@ -1,10 +1,15 @@
 "use client";
 
-import { localeNames, locales } from "@/i18nconfig";
+import { locales } from "@/i18nconfig";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
+import { Locale } from "../types";
 
-export default function LocaleSwitcher() {
+export default function LocaleSwitcher({
+  localeNames,
+}: {
+  localeNames: Record<Locale, string>;
+}) {
   const locale = useLocale();
   const router = useRouter();
   const pathName = usePathname();

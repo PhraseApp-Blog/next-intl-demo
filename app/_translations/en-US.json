@@ -1,4 +1,8 @@
 {
+  "useLocaleNames": {
+    "en-US": "English",
+    "ar-EG": "Arabic (العربية)"
+  },
   "Header": {
     "title": "Dirkha",
     "subtitle": "Good Green News",
