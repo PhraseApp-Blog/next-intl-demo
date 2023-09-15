@@ -1,5 +1,5 @@
+import Link from "next-intl/link";
 import Image from "next/image";
-import Link from "next/link";
 import { Article } from "../types";
 
 export default function FeaturedArticle({ article }: { article: Article }) {

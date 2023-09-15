@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next-intl/link";
 import { Article } from "../types";
 
 export default function ArticleTeaser({ article }: { article: Article }) {
