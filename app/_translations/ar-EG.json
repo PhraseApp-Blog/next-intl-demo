@@ -25,6 +25,9 @@
   "ArticleTeaser": {
     "author": "بقلم {author}"
   },
+  "ArticlePage": {
+    "publishDate": "نُشر {date, date, ::E, MMMM d, yyyy}"
+  },
   "Numbers": {
     "title": "الأرقام",
     "numberInMessage": "رقم في الرسالة: {value, number, ::. currency/EUR}"

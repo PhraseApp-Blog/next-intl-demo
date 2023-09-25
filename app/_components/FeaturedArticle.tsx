@@ -1,4 +1,4 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useFormatter, useLocale, useTranslations } from "next-intl";
 import Link from "next-intl/link";
 import Image from "next/image";
 import { Article, Locale } from "../types";
@@ -6,6 +6,7 @@ import { Article, Locale } from "../types";
 export default function FeaturedArticle({ article }: { article: Article }) {
   const locale = useLocale() as Locale;
   const t = useTranslations("FeaturedArticle");
+  const format = useFormatter();
   const { imgUrl, author, publishedAt } = article;
   const { title } = article.translations[locale];
 
@@ -28,7 +29,13 @@ export default function FeaturedArticle({ article }: { article: Article }) {
         </h2>
         <div className="flex items-baseline justify-between">
           <p className="text-stone-100">{t("author", { author })}</p>
-          <p className="text-xs text-stone-300">{publishedAt}</p>
+          <p className="text-xs text-stone-300">
+            {format.dateTime(Date.parse(publishedAt), {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </p>
         </div>
       </div>
     </article>

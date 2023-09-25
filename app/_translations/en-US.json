@@ -25,6 +25,9 @@
   "ArticleTeaser": {
     "author": "by {author}"
   },
+  "ArticlePage": {
+    "publishDate": "Published {date, date, ::E, MMM d, yyyy}"
+  },
   "Numbers": {
     "title": "Numbers",
     "numberInMessage": "A number within a message: {value, number, ::compact-short currency/EUR}"
