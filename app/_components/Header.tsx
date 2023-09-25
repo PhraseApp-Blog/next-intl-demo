@@ -18,7 +18,7 @@ export default function Header() {
               alt={t("logoAlt")}
               width={50}
               height={50}
-              className="relative -right-[2px] h-10 w-10 "
+              className="relative h-10 w-10  ltr:-right-[2px] rtl:-left-[2px] rtl:rotate-180"
             />
             <div className="flex flex-col">
               <div className="text-2xl font-bold text-lime-900">
@@ -29,7 +29,7 @@ export default function Header() {
               </div>
             </div>
           </Link>
-          <Link href="/about" className="-mt-1 ml-6">
+          <Link href="/about" className="-mt-1 ms-6">
             {t("nav.about")}
           </Link>
         </div>

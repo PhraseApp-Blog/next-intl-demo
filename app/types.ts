@@ -1,5 +1,7 @@
 export type Locale = "en-US" | "ar-EG";
 
+export type LocaleDirection = "ltr" | "rtl";
+
 export interface ApiData {
   featured: Article;
   feed: Article[];

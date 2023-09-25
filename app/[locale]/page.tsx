@@ -16,16 +16,16 @@ export default async function Home() {
       <div className="flex">
         <div className="w-1/2 shrink-0">
           <div className="mb-2 text-sm font-light text-lime-900">
-            <span className="-ml-1 rounded-sm bg-lime-50 px-1">
+            <span className="-ms-1 rounded-sm bg-lime-50 px-1">
               Featured story
             </span>
           </div>
           <FeaturedArticle article={featured} />
         </div>
 
-        <div className="ml-4">
+        <div className="ms-4">
           <div className="mb-2 flex items-baseline justify-between text-sm font-light text-lime-900">
-            <span className="-ml-1 rounded-sm bg-lime-50 px-1">
+            <span className="-ms-1 rounded-sm bg-lime-50 px-1">
               The grapevine
             </span>
             <span className="inline-block rounded-sm bg-lime-50/40 px-1 text-xs">

@@ -18,7 +18,7 @@ export default async function ArticlePage({
     <main className="px-6 py-2">
       <h1 className="mb-2 mt-2 text-3xl font-bold text-lime-900">{title}</h1>
       <div className="flex items-baseline justify-between">
-        <div className="mr-3 inline-block rounded-sm bg-lime-50/40 px-2 py-1 text-sm">
+        <div className="me-3 inline-block rounded-sm bg-lime-50/40 px-2 py-1 text-sm">
           <p className="text-stone-600">by {author}</p>
           <p className="text-stone-500">published {publishedAt}</p>
         </div>
