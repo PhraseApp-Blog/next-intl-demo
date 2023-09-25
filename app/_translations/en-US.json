@@ -31,7 +31,10 @@
     "author": "by {author}"
   },
   "ArticlePage": {
-    "publishDate": "Published {date, date, ::E, MMM d, yyyy}"
+    "author": "by {author}",
+    "publishDate": "Published {date, date, ::E, MMM d, yyyy}",
+    "source": "source: <a>euronews.green</a>",
+    "summaryCredit": "[summarized by <a>ChatGPT</a>]"
   },
   "Numbers": {
     "title": "Numbers",

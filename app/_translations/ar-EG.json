@@ -31,7 +31,10 @@
     "author": "بقلم {author}"
   },
   "ArticlePage": {
-    "publishDate": "نُشر {date, date, ::E, MMMM d, yyyy}"
+    "author": "بقلم {author}",
+    "publishDate": "نُشر {date, date, ::E, MMMM d, yyyy}",
+    "source": "المصدر: <a>يورو نيوز جرين</a>",
+    "summaryCredit": "لُخص بواسطة <a>تشات جي پي تي</a>"
   },
   "Numbers": {
     "title": "الأرقام",
