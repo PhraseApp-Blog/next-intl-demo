@@ -1,4 +1,5 @@
-import { Article } from "@/app/types";
+import { Article, Locale } from "@/app/types";
+import { useLocale } from "next-intl";
 
 export default async function ArticlePage({
   params: { id },
@@ -10,7 +11,8 @@ export default async function ArticlePage({
   }).then((res) => res.json());
 
   const { author, publishedAt, sourceUrl } = article;
-  const { title, body } = article.translations["en-US"];
+  const locale = useLocale() as Locale;
+  const { title, body } = article.translations[locale];
 
   return (
     <main className="px-6 py-2">

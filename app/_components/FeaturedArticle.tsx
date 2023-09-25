@@ -1,10 +1,12 @@
+import { useLocale } from "next-intl";
 import Link from "next-intl/link";
 import Image from "next/image";
-import { Article } from "../types";
+import { Article, Locale } from "../types";
 
 export default function FeaturedArticle({ article }: { article: Article }) {
   const { imgUrl, author, publishedAt } = article;
-  const { title } = article.translations["en-US"];
+  const locale = useLocale() as Locale;
+  const { title } = article.translations[locale];
 
   return (
     <article className="relative h-[225px] w-full overflow-hidden rounded-md">
