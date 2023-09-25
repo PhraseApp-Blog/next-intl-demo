@@ -10,5 +10,9 @@
     "nav": {
       "about": "About"
     }
+  },
+  "Home": {
+    "featured": "Featured story",
+    "feed": "The grapevine"
   }
 }
