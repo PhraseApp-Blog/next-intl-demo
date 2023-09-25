@@ -1,6 +1,5 @@
 import { locales } from "@/i18nconfig";
-import type { Metadata } from "next";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslator, unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Footer from "../_components/Footer";
 import Header from "../_components/Header";
@@ -12,10 +11,17 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: "Dirkha - Good Green News",
-  description: "Created using Next.js",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  const t = await getTranslator(locale, "Metadata");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function RootLayout({
   children,

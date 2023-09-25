@@ -1,6 +1,17 @@
 import { Locale } from "@/app/types";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslator, unstable_setRequestLocale } from "next-intl/server";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  const t = await getTranslator(locale, "About");
+  return {
+    title: t("title"),
+  };
+}
 
 export default function AboutPage({
   params: { locale },

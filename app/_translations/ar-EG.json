@@ -11,6 +11,10 @@
       "about": "عن دِرخَة"
     }
   },
+  "Metadata": {
+    "title": "دِرخَة - أخبار بيئية إيجابية",
+    "description": "تم إنشاؤه باستخدام Next.js وnext-intl"
+  },
   "Home": {
     "featured": "قصة مميزة",
     "feed": "أخر الأخبار",
