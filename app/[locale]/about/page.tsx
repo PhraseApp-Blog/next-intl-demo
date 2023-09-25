@@ -1,4 +1,13 @@
-export default function AboutPage() {
+import { Locale } from "@/app/types";
+import { unstable_setRequestLocale } from "next-intl/server";
+
+export default function AboutPage({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  unstable_setRequestLocale(locale);
+
   return (
     <main className="px-6 py-2">
       <h1 className="mb-2 mt-2 text-3xl font-bold text-lime-900">About</h1>

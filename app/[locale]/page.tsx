@@ -1,4 +1,4 @@
-import { getTranslator } from "next-intl/server";
+import { getTranslator, unstable_setRequestLocale } from "next-intl/server";
 import ArticleTeaser from "../_components/ArticleTeaser";
 import FeaturedArticle from "../_components/FeaturedArticle";
 import { ApiData, Locale } from "../types";
@@ -8,6 +8,7 @@ export default async function Home({
 }: {
   params: { locale: Locale };
 }) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslator(locale, "Home");
 
   const data: ApiData = await fetch(process.env.API_URL!, {
