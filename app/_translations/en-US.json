@@ -14,5 +14,8 @@
   "Home": {
     "featured": "Featured story",
     "feed": "The grapevine"
+  },
+  "About": {
+    "title": "About Dirkha"
   }
 }
