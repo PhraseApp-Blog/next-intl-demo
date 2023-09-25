@@ -16,9 +16,12 @@ export default function AboutPage({
         {t("title")}
       </h1>
       <p className="mt-2 text-lg">
-        This is a demo of <a href="https://nextjs.org/">Next.js</a> App Router
-        localization with{" "}
-        <a href="https://next-intl-docs.vercel.app/">next-intl</a>.
+        {t.rich("content", {
+          nextLink: (chunks) => <a href="https://nextjs.org/">{chunks}</a>,
+          nextIntlLink: (chunks) => (
+            <a href="https://next-intl-docs.vercel.app/">{chunks}</a>
+          ),
+        })}
       </p>
     </main>
   );

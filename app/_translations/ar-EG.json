@@ -17,7 +17,8 @@
     "feedCount": "{count, plural, zero {لا توجد قصص} one {قصة واحدة} two {قصتين ٢}few {# قصص} many {# قصة} other {# قصة}}"
   },
   "About": {
-    "title": "عن دِرخَة"
+    "title": "عن دِرخَة",
+    "content": "هذا عرض توضيحي لتوطين <nextLink>Next.js</nextLink> مع App Router بواسطة <nextIntlLink>next-intl</nextIntlLink>."
   },
   "FeaturedArticle": {
     "author": "بقلم {author}"
@@ -31,5 +32,8 @@
   "Numbers": {
     "title": "الأرقام",
     "numberInMessage": "رقم في الرسالة: {value, number, ::. currency/EUR}"
+  },
+  "Footer": {
+    "footer": "مصدر الأخبار: <euronewsLink>يورو نيوز جرين</euronewsLink> - تم تطويره باستخدام  <nextLink>نكست چي إس</nextLink>"
   }
 }

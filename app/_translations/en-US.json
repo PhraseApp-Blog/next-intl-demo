@@ -17,7 +17,8 @@
     "feedCount": "{count, plural, =0 {No stories} one {# story} other {# stories}}"
   },
   "About": {
-    "title": "About Dirkha"
+    "title": "About Dirkha",
+    "content": "This is a demo of <nextLink>Next.js</nextLink> App Router localization with <nextIntlLink>next-intl</nextIntlLink>."
   },
   "FeaturedArticle": {
     "author": "by {author}"
@@ -31,5 +32,8 @@
   "Numbers": {
     "title": "Numbers",
     "numberInMessage": "A number within a message: {value, number, ::compact-short currency/EUR}"
+  },
+  "Footer": {
+    "footer": "news source: <euronewsLink>euronews.green</euronewsLink>; created with <nextLink>next.js</nextLink>"
   }
 }
