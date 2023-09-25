@@ -17,5 +17,11 @@
   },
   "About": {
     "title": "About Dirkha"
+  },
+  "FeaturedArticle": {
+    "author": "by {author}"
+  },
+  "ArticleTeaser": {
+    "author": "by {author}"
   }
 }

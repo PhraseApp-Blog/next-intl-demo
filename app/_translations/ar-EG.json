@@ -17,5 +17,11 @@
   },
   "About": {
     "title": "عن دِرخَة"
+  },
+  "FeaturedArticle": {
+    "author": "بقلم {author}"
+  },
+  "ArticleTeaser": {
+    "author": "بقلم {author}"
   }
 }
