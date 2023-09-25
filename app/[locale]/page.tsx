@@ -37,7 +37,7 @@ export default async function Home({
               {t("feed")}
             </span>
             <span className="inline-block rounded-sm bg-lime-50/40 px-1 text-xs">
-              {feed.length} stories
+              {t("feedCount", { count: feed.length })}
             </span>
           </div>
           {feed.map((article) => (

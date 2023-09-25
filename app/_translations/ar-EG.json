@@ -13,7 +13,8 @@
   },
   "Home": {
     "featured": "قصة مميزة",
-    "feed": "أخر الأخبار"
+    "feed": "أخر الأخبار",
+    "feedCount": "{count, plural, zero {لا توجد قصص} one {قصة واحدة} two {قصتين ٢}few {# قصص} many {# قصة} other {# قصة}}"
   },
   "About": {
     "title": "عن دِرخَة"

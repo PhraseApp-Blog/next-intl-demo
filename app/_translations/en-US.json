@@ -13,7 +13,8 @@
   },
   "Home": {
     "featured": "Featured story",
-    "feed": "The grapevine"
+    "feed": "The grapevine",
+    "feedCount": "{count, plural, =0 {No stories} one {# story} other {# stories}}"
   },
   "About": {
     "title": "About Dirkha"
