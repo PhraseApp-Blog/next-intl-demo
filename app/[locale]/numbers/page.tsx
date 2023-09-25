@@ -1,6 +1,13 @@
+import { Locale } from "@/app/types";
 import { useFormatter, useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function NumbersPage() {
+export default function NumbersPage({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("Numbers");
   const format = useFormatter();
 
