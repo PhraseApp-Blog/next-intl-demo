@@ -25,9 +25,9 @@ export default function LocaleSwitcher({
         onChange={switchLocale}
         className="cursor-pointer appearance-none rounded-md bg-lime-200 bg-[url('/noun-chevron-3255112.svg')] bg-no-repeat py-1 pe-7 ps-2 shadow-sm shadow-lime-950/10 ltr:bg-[101%_50%] rtl:bg-[0%_50%]"
       >
-        {locales.map((locale) => (
-          <option key={locale} value={locale}>
-            {localeNames[locale]}
+        {locales.map((loc) => (
+          <option key={loc} value={loc}>
+            {localeNames[loc]}
           </option>
         ))}
       </select>
