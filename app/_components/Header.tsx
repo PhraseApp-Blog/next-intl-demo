@@ -1,5 +1,5 @@
+import { Link } from "@/i18n.config";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 
 export default function Header() {
   const t = useTranslations("Header");
