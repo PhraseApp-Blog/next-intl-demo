@@ -1,0 +1,9 @@
+{
+  "Header": {
+    "appTitle": "Next.js Weather",
+    "navLinks": {
+      "week": "This week",
+      "about": "About"
+    }
+  }
+}

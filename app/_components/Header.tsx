@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function Header() {
+  const t = useTranslations("Header");
+
   return (
     <header className="mb-3 border-b border-sky-900/75 pb-2 text-sm">
       <nav>
@@ -10,7 +13,7 @@ export default function Header() {
               href="/"
               className="font-medium text-sky-300"
             >
-              Next.js Weather
+              {t("appTitle")}
             </Link>
           </li>
           <li>
@@ -18,7 +21,7 @@ export default function Header() {
               href="/week"
               className="font-light text-sky-200"
             >
-              This week
+              {t("navLinks.week")}
             </Link>
           </li>
           <li>
@@ -26,7 +29,7 @@ export default function Header() {
               href="/about"
               className="font-light text-sky-200"
             >
-              About
+              {t("navLinks.about")}
             </Link>
           </li>
         </ul>
