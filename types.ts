@@ -13,3 +13,7 @@ export interface Temperature {
   celsius: number;
   fahrenheit: number;
 }
+
+export interface WeatherAlertsRoot {
+  weatherAlerts: string[];
+}

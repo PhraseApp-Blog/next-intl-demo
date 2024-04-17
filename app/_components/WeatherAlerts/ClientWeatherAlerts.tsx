@@ -3,9 +3,12 @@
 import clsx from "clsx/lite";
 import { useState } from "react";
 
-export default function WeatherAlerts() {
+export default function ClientWeatherAlerts({
+  title,
+  alerts,
+}: Readonly<{ title: string; alerts: string[] }>) {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleAlerts = () => setIsOpen(!isOpen);
+  const toggleIsOpen = () => setIsOpen(!isOpen);
 
   return (
     <div>
@@ -14,9 +17,9 @@ export default function WeatherAlerts() {
           "flex cursor-pointer items-center justify-between bg-red-200 p-4 text-red-900",
           isOpen ? "rounded-t-md" : "rounded-md",
         )}
-        onClick={toggleAlerts}
+        onClick={toggleIsOpen}
       >
-        Weather Alerts
+        {title}
         <span
           className={clsx(
             "transform transition-transform",
@@ -28,16 +31,11 @@ export default function WeatherAlerts() {
       </div>
       {isOpen && (
         <div className="divide-y divide-dashed divide-white/20 rounded-b-md bg-red-900 p-4 text-red-100">
-          <p className="py-2">
-            🌩️ Severe Thunderstorm Warning until 09:00 PM
-          </p>
-          <p className="py-2">
-            🌨️ Blizzard Warning in effect from 01:00 AM
-          </p>
-          <p className="py-2">
-            🌊 Coastal Flood Advisory from noon today to
-            10:00 PM
-          </p>
+          {alerts.map((alert) => (
+            <p className="py-2" key={alert}>
+              {alert}
+            </p>
+          ))}
         </div>
       )}
     </div>

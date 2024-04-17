@@ -5,5 +5,8 @@
       "week": "This week",
       "about": "About"
     }
+  },
+  "WeatherAlerts": {
+    "title": "Weather Alerts"
   }
 }
