@@ -1,6 +1,11 @@
+import { unstable_setRequestLocale } from "next-intl/server";
 import WeatherAlerts from "../_components/WeatherAlerts/WeatherAlerts";
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: Readonly<{ params: { locale: string } }>) {
+  unstable_setRequestLocale(locale);
+
   return (
     <main>
       <h1 className="text-xs font-thin">

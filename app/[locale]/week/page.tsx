@@ -1,7 +1,14 @@
 import type { WeeklyWeatherRoot } from "@/types";
-import { getTranslations } from "next-intl/server";
+import {
+  getTranslations,
+  unstable_setRequestLocale,
+} from "next-intl/server";
 
-export default async function Week() {
+export default async function Week({
+  params: { locale },
+}: Readonly<{ params: { locale: string } }>) {
+  unstable_setRequestLocale(locale);
+
   const response = await fetch(
     "http://localhost:3000/week.json",
   );
