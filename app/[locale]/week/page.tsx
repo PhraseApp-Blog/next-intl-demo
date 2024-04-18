@@ -1,4 +1,5 @@
 import type { WeeklyWeatherRoot } from "@/types";
+import { getTranslations } from "next-intl/server";
 
 export default async function Week() {
   const response = await fetch(
@@ -6,6 +7,8 @@ export default async function Week() {
   );
   const { weeklyWeather } =
     (await response.json()) as WeeklyWeatherRoot;
+
+  const t = await getTranslations("Week");
 
   return (
     <main>
@@ -24,7 +27,7 @@ export default async function Week() {
                   {day.conditionIcon}
                 </p>
                 <p className="text-3xl font-light">
-                  {day.condition}
+                  {t(day.condition)}
                 </p>
                 <p className="text-3xl font-thin">
                   {day.temperature.celsius}°C

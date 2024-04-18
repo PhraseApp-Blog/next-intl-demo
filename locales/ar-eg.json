@@ -8,5 +8,13 @@
   },
   "WeatherAlerts": {
     "title": "تنبيهات الطقس"
+  },
+  "Week": {
+    "sunny": "مشمس",
+    "cloudy": "غائم",
+    "rainy": "ممطر",
+    "partlyCloudy": "غائم جزئيا",
+    "showers": "زخات مطرية",
+    "thunderstorms": "عواصف رعدية"
   }
 }
