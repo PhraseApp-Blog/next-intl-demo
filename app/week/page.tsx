@@ -1,4 +1,4 @@
-import type { WeeklyWeatherRoot } from "../types";
+import type { WeeklyWeatherRoot } from "@/types";
 
 export default async function Week() {
   const response = await fetch(
