@@ -1,15 +1,6 @@
-import { WeatherAlertsRoot } from "@/types";
 import WeatherAlerts from "../_components/WeatherAlerts/WeatherAlerts";
 
-export default async function Home({
-  params: { locale },
-}: Readonly<{ params: { locale: string } }>) {
-  const weatherAlertsResponse = await fetch(
-    `http://localhost:3000/${locale}/weather-alerts.json`,
-  );
-  const { weatherAlerts } =
-    (await weatherAlertsResponse.json()) as WeatherAlertsRoot;
-
+export default async function Home() {
   return (
     <main>
       <h1 className="text-xs font-thin">
@@ -25,7 +16,7 @@ export default async function Home({
         </div>
       </section>
 
-      <WeatherAlerts alerts={weatherAlerts} />
+      <WeatherAlerts />
     </main>
   );
 }

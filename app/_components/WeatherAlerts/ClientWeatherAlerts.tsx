@@ -5,8 +5,8 @@ import { useState } from "react";
 
 export default function ClientWeatherAlerts({
   title,
-  alerts,
-}: Readonly<{ title: string; alerts: string[] }>) {
+  children,
+}: Readonly<{ title: string; children: React.ReactNode }>) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleIsOpen = () => setIsOpen(!isOpen);
 
@@ -31,11 +31,7 @@ export default function ClientWeatherAlerts({
       </div>
       {isOpen && (
         <div className="divide-y divide-dashed divide-white/20 rounded-b-md bg-red-900 p-4 text-red-100">
-          {alerts.map((alert) => (
-            <p className="py-2" key={alert}>
-              {alert}
-            </p>
-          ))}
+          {children}
         </div>
       )}
     </div>
