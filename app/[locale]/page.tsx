@@ -1,6 +1,6 @@
 import WeatherAlerts from "../_components/WeatherAlerts/WeatherAlerts";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main>
       <h1 className="text-xs font-thin">
