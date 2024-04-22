@@ -9,6 +9,9 @@
   "WeatherAlerts": {
     "title": "تنبيهات الطقس"
   },
+  "Home": {
+    "userGreeting": "👋 مرحباً {name}"
+  },
   "Week": {
     "sunny": "مشمس",
     "cloudy": "غائم",

@@ -1,13 +1,20 @@
+import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import WeatherAlerts from "../_components/WeatherAlerts/WeatherAlerts";
 
 export default function Home({
   params: { locale },
 }: Readonly<{ params: { locale: string } }>) {
+  const t = useTranslations("Home");
+
   unstable_setRequestLocale(locale);
 
   return (
     <main>
+      <p className="mx-auto mb-2 w-max rounded-sm bg-slate-800 px-2 py-1 text-xs text-sky-200">
+        {t("userGreeting", { name: "Noor" })}
+      </p>
+
       <h1 className="text-xs font-thin">
         Today&apos;s weather
       </h1>
