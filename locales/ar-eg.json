@@ -1,4 +1,7 @@
 {
+  "units": {
+    "temperature": "celsius"
+  },
   "Header": {
     "appTitle": "تقص نكست چى إس",
     "navLinks": {

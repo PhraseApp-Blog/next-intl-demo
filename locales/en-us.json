@@ -1,4 +1,7 @@
 {
+  "units": {
+    "temperature": "fahrenheit"
+  },
   "Header": {
     "appTitle": "Next.js Weather",
     "navLinks": {

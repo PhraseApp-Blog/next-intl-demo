@@ -18,6 +18,8 @@ export default async function Week({
 
   const t = await getTranslations("Week");
   const format = await getFormatter();
+  const temperatureUnit =
+    locale === "en-us" ? "fahrenheit" : "celsius";
 
   return (
     <main>
@@ -44,10 +46,10 @@ export default async function Week({
                   {t(day.condition)}
                 </p>
                 <p className="text-3xl font-thin">
-                  {format.number(day.temperature.celsius, {
-                    style: "unit",
-                    unit: "celsius",
-                  })}
+                  {format.number(
+                    day.temperature[temperatureUnit],
+                    "temperature",
+                  )}
                 </p>
               </div>
             </div>
