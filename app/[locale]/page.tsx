@@ -5,10 +5,9 @@ import WeatherAlerts from "../_components/WeatherAlerts/WeatherAlerts";
 export default function Home({
   params: { locale },
 }: Readonly<{ params: { locale: string } }>) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("Home");
   const format = useFormatter();
-
-  unstable_setRequestLocale(locale);
 
   return (
     <main>
