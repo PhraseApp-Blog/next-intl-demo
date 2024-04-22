@@ -16,10 +16,12 @@ export default function Home({
         {t("userGreeting", { name: "Noor" })}
       </p>
 
-      <h1 className="text-xs font-thin">
-        Today&apos;s weather
-      </h1>
-      <h2 className="text-lg">Monday April 15 2024</h2>
+      <h1 className="text-xs font-thin">{t("title")}</h1>
+      <h2 className="text-lg">
+        {format.dateTime(new Date("2024-04-15T00:00:00Z"), {
+          dateStyle: "full",
+        })}
+      </h2>
 
       <section className="mb-10">
         <div className="flex items-baseline gap-3">

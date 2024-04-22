@@ -1,5 +1,6 @@
 import type { WeeklyWeatherRoot } from "@/types";
 import {
+  getFormatter,
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
@@ -16,13 +17,12 @@ export default async function Week({
     (await response.json()) as WeeklyWeatherRoot;
 
   const t = await getTranslations("Week");
+  const format = await getFormatter();
 
   return (
     <main>
       <div className="flex items-baseline justify-between">
-        <h1 className="text-xs font-thin">
-          This week&apos;s weather
-        </h1>
+        <h1 className="text-xs font-thin">{t("title")}</h1>
         <p className="w-max rounded-md bg-red-900 px-2 py-1 text-xs text-red-100">
           {t("alertCount", { count: 3 })}
         </p>
@@ -31,7 +31,9 @@ export default async function Week({
         {weeklyWeather.map((day) => (
           <section key={day.dateTime} className="py-5">
             <h2 className="mb-1 text-lg font-thin">
-              {new Date(day.dateTime).toString()}
+              {t("dayDate", {
+                dayDate: new Date(day.dateTime),
+              })}
             </h2>
             <div>
               <div className="flex items-baseline gap-3">
@@ -42,7 +44,10 @@ export default async function Week({
                   {t(day.condition)}
                 </p>
                 <p className="text-3xl font-thin">
-                  {day.temperature.celsius}°C
+                  {format.number(day.temperature.celsius, {
+                    style: "unit",
+                    unit: "celsius",
+                  })}
                 </p>
               </div>
             </div>

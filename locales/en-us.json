@@ -10,11 +10,14 @@
     "title": "Weather Alerts"
   },
   "Home": {
+    "title": "Today's weather",
     "userGreeting": "👋 Welcome, {name}!",
     "sunny": "Sunny"
   },
   "Week": {
+    "title": "This week's weather",
     "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
+    "dayDate": "{dayDate, date, ::EEEE}",
     "sunny": "Sunny",
     "cloudy": "Cloudy",
     "rainy": "Rainy",
