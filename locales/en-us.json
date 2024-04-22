@@ -20,7 +20,7 @@
   "Week": {
     "title": "This week's weather",
     "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
-    "dayDate": "{dayDate, date, ::EEEE}",
+    "dayDate": "{dayDate, date, longDay}",
     "sunny": "Sunny",
     "cloudy": "Cloudy",
     "rainy": "Rainy",
@@ -30,7 +30,7 @@
   },
   "About": {
     "title": "About",
-    "description": "This is a minimalistic mock weather app built with Next.js.",
+    "description": "This is a minimalistic mock weather app built with <linkToNext>Next.js</linkToNext>.",
     "liveDuration": "We've been live for {duration, number, ::precision-integer} seconds."
   }
 }

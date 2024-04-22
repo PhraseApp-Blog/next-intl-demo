@@ -20,7 +20,7 @@
   "Week": {
     "title": "الطقس لهذا الأسبوع",
     "alertCount": "{count, plural, zero {لا توجد تنبيهات} one {يوجد تنبيه واحد} two {يوجد تنبيهان} few {يوجد {count, number} تنبيهات} many {يوجد {count, number} تنبيه} other {يوجد {count, number} تنبيه}}",
-    "dayDate": "{dayDate, date, ::EEEE}",
+    "dayDate": "{dayDate, date, longDay}",
     "sunny": "مشمس",
     "cloudy": "غائم",
     "rainy": "ممطر",
@@ -30,7 +30,7 @@
   },
   "About": {
     "title": "نبذة عنا",
-    "description": "هذا تطبيق طقس وهمي بسيط تم إنشاؤه باستخدام Next.js.",
+    "description": "هذا تطبيق طقس وهمي بسيط تم إنشاؤه باستخدام <linkToNext>Next.js</linkToNext>.",
     "liveDuration": "لقد كنا على الهواء مباشرة لمدة {duration, number, ::precision-integer} ثانية."
   }
 }
