@@ -10,7 +10,8 @@
     "title": "Weather Alerts"
   },
   "Home": {
-    "userGreeting": "👋 Welcome, {name}!"
+    "userGreeting": "👋 Welcome, {name}!",
+    "sunny": "Sunny"
   },
   "Week": {
     "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
@@ -20,5 +21,10 @@
     "partlyCloudy": "Partly Cloudy",
     "showers": "Showers",
     "thunderstorms": "Thunderstorms"
+  },
+  "About": {
+    "title": "About",
+    "description": "This is a minimalistic mock weather app built with Next.js.",
+    "liveDuration": "We've been live for {duration, number, ::precision-integer} seconds."
   }
 }

@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useFormatter, useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import WeatherAlerts from "../_components/WeatherAlerts/WeatherAlerts";
 
@@ -6,6 +6,7 @@ export default function Home({
   params: { locale },
 }: Readonly<{ params: { locale: string } }>) {
   const t = useTranslations("Home");
+  const format = useFormatter();
 
   unstable_setRequestLocale(locale);
 
@@ -23,8 +24,15 @@ export default function Home({
       <section className="mb-10">
         <div className="flex items-baseline gap-3">
           <p className="relative top-4 text-8xl">☀️</p>
-          <p className="text-6xl font-light">Sunny</p>
-          <p className="text-6xl font-thin">22°C</p>
+          <p className="text-6xl font-light">
+            {t("sunny")}
+          </p>
+          <p className="text-6xl font-thin">
+            {format.number(22, {
+              style: "unit",
+              unit: "celsius",
+            })}
+          </p>
         </div>
       </section>
 

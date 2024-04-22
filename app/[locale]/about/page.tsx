@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 export default function About({
@@ -5,12 +6,14 @@ export default function About({
 }: Readonly<{ params: { locale: string } }>) {
   unstable_setRequestLocale(locale);
 
+  const t = useTranslations("About");
+
   return (
     <main>
-      <h1 className="text-xs font-thin">About</h1>
-      <p className="text-lg">
-        This is a minimalistic mock weather app built with
-        Next.js.
+      <h1 className="text-xs font-thin">{t("title")}</h1>
+      <p className="mb-3 text-lg">{t("description")}</p>
+      <p className="mb-2 rounded-md bg-slate-800 px-2 py-2 text-center text-sm text-sky-200">
+        {t("liveDuration", { duration: 17280000.45 })}
       </p>
     </main>
   );
