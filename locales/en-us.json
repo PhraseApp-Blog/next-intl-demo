@@ -13,6 +13,7 @@
     "userGreeting": "👋 Welcome, {name}!"
   },
   "Week": {
+    "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
     "sunny": "Sunny",
     "cloudy": "Cloudy",
     "rainy": "Rainy",
