@@ -12,12 +12,22 @@ function formatsFor(locale: Locale): Partial<Formats> {
           unit: "celsius",
         },
       },
+      dateTime: {
+        longDay: {
+          weekday: "long",
+        },
+      },
     },
     "en-us": {
       number: {
         temperature: {
           style: "unit",
           unit: "fahrenheit",
+        },
+      },
+      dateTime: {
+        longDay: {
+          weekday: "long",
         },
       },
     },
