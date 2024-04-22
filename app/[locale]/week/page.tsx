@@ -1,9 +1,26 @@
+import { Locale } from "@/i18n.config";
 import type { WeeklyWeatherRoot } from "@/types";
 import {
   getFormatter,
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  const t = await getTranslations({
+    locale,
+    namespace: "Week.metaData",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default async function Week({
   params: { locale },

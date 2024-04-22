@@ -1,19 +1,31 @@
 import Header from "@/app/_components/Header";
 import "@/app/globals.css";
 import { Locale, locales } from "@/i18n.config";
-import type { Metadata } from "next";
-import { unstable_setRequestLocale } from "next-intl/server";
+import {
+  getTranslations,
+  unstable_setRequestLocale,
+} from "next-intl/server";
 import useTextDirection from "../_hooks/useTextDirection";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: "Next.js Weather",
-  description:
-    "A weather app built with Next.js and next-intl",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  const t = await getTranslations({
+    locale,
+    namespace: "Layout.metaData",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function LocaleLayout({
   children,

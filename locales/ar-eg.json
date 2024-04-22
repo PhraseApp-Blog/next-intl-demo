@@ -2,6 +2,12 @@
   "units": {
     "temperature": "celsius"
   },
+  "Layout": {
+    "metaData": {
+      "title": "تقص نكست چى إس",
+      "description": "تطبيق طقس وهمي بسيط تم إنشاؤه باستخدام Next.js و next-intl."
+    }
+  },
   "Header": {
     "appTitle": "تقص نكست چى إس",
     "navLinks": {
@@ -18,6 +24,10 @@
     "sunny": "مشمس"
   },
   "Week": {
+    "metaData": {
+      "title": "الطقس لهذا الأسبوع | تقص نكست چى إس",
+      "description": "توقعات الطقس لهذا الأسبوع."
+    },
     "title": "الطقس لهذا الأسبوع",
     "alertCount": "{count, plural, zero {لا توجد تنبيهات} one {يوجد تنبيه واحد} two {يوجد تنبيهان} few {يوجد {count, number} تنبيهات} many {يوجد {count, number} تنبيه} other {يوجد {count, number} تنبيه}}",
     "dayDate": "{dayDate, date, longDay}",

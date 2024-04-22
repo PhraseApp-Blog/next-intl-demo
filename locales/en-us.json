@@ -2,6 +2,12 @@
   "units": {
     "temperature": "fahrenheit"
   },
+  "Layout": {
+    "metaData": {
+      "title": "Next.js Weather",
+      "description": "A weather app built with Next.js and next-intl"
+    }
+  },
   "Header": {
     "appTitle": "Next.js Weather",
     "navLinks": {
@@ -18,6 +24,10 @@
     "sunny": "Sunny"
   },
   "Week": {
+    "metaData": {
+      "title": "This week's weather | Next.js Weather",
+      "description": "This week's weather forecast"
+    },
     "title": "This week's weather",
     "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
     "dayDate": "{dayDate, date, longDay}",
