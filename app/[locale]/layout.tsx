@@ -1,6 +1,6 @@
 import Header from "@/app/_components/Header";
 import "@/app/globals.css";
-import { Locale, locales } from "@/i18n.config";
+import { locales } from "@/i18n.config";
 import {
   getTranslations,
   unstable_setRequestLocale,
@@ -14,7 +14,7 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params: { locale },
 }: {
-  params: { locale: Locale };
+  params: { locale: string };
 }) {
   const t = await getTranslations({
     locale,
@@ -32,7 +32,7 @@ export default function LocaleLayout({
   params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: { locale: string };
 }>) {
   unstable_setRequestLocale(locale);
   const dir = useTextDirection();

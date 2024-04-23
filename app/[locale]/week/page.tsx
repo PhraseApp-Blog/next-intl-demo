@@ -1,4 +1,3 @@
-import { Locale } from "@/i18n.config";
 import type { WeeklyWeatherRoot } from "@/types";
 import {
   getFormatter,
@@ -9,7 +8,7 @@ import {
 export async function generateMetadata({
   params: { locale },
 }: {
-  params: { locale: Locale };
+  params: { locale: string };
 }) {
   const t = await getTranslations({
     locale,
