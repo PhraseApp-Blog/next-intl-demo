@@ -1,11 +1,14 @@
 import type { WeeklyWeatherRoot } from "@/types";
+import { promises as fs } from "fs";
 
 export default async function Week() {
-  const response = await fetch(
-    "http://localhost:3000/week.json",
+  const fileContents = await fs.readFile(
+    `${process.cwd()}/app/_data/week.json`,
+    "utf-8",
   );
-  const { weeklyWeather } =
-    (await response.json()) as WeeklyWeatherRoot;
+  const { weeklyWeather } = JSON.parse(
+    fileContents,
+  ) as WeeklyWeatherRoot;
 
   return (
     <main>
