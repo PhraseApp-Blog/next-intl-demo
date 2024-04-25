@@ -1,4 +1,5 @@
 import type { WeeklyWeatherRoot } from "@/types";
+import { promises as fs } from "fs";
 import {
   getFormatter,
   getTranslations,
@@ -26,11 +27,13 @@ export default async function Week({
 }: Readonly<{ params: { locale: string } }>) {
   unstable_setRequestLocale(locale);
 
-  const response = await fetch(
-    "http://localhost:3000/week.json",
+  const fileContents = await fs.readFile(
+    `${process.cwd()}/app/_data/week.json`,
+    "utf-8",
   );
-  const { weeklyWeather } =
-    (await response.json()) as WeeklyWeatherRoot;
+  const { weeklyWeather } = JSON.parse(
+    fileContents,
+  ) as WeeklyWeatherRoot;
 
   const t = await getTranslations("Week");
   const format = await getFormatter();
