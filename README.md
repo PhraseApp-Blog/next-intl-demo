@@ -24,6 +24,6 @@ npm run build
 
 ## Notes
 
-- This is completed demo after localization. If you want the starter project before localization, check out the `start` branch.
+- This is the completed demo after localization. If you want the starter project before localization check out the `start` branch.
 - This project was bootstrapped with [Create Next App](https://nextjs.org/docs/pages/api-reference/create-next-app)
 - This demo uses the stable version of next-intl. If you want the previous demo that uses the beta version, check out the `archive-main-2023-09` branch.
