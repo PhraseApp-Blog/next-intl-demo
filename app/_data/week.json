@@ -1,0 +1,67 @@
+{
+  "weeklyWeather": [
+    {
+      "dateTime": "2024-04-15T12:00:00Z",
+      "condition": "sunny",
+      "conditionIcon": "☀️",
+      "temperature": {
+        "celsius": 22,
+        "fahrenheit": 71.6
+      }
+    },
+    {
+      "dateTime": "2024-04-16T12:00:00Z",
+      "condition": "partlyCloudy",
+      "conditionIcon": "⛅️",
+      "temperature": {
+        "celsius": 20,
+        "fahrenheit": 68
+      }
+    },
+    {
+      "dateTime": "2024-04-17T12:00:00Z",
+      "condition": "cloudy",
+      "conditionIcon": "☁️",
+      "temperature": {
+        "celsius": 18,
+        "fahrenheit": 64.4
+      }
+    },
+    {
+      "dateTime": "2024-04-18T12:00:00Z",
+      "condition": "rainy",
+      "conditionIcon": "🌧",
+      "temperature": {
+        "celsius": 16,
+        "fahrenheit": 60.8
+      }
+    },
+    {
+      "dateTime": "2024-04-19T12:00:00Z",
+      "condition": "thunderstorms",
+      "conditionIcon": "⛈",
+      "temperature": {
+        "celsius": 15,
+        "fahrenheit": 59
+      }
+    },
+    {
+      "dateTime": "2024-04-20T12:00:00Z",
+      "condition": "showers",
+      "conditionIcon": "🌦",
+      "temperature": {
+        "celsius": 17,
+        "fahrenheit": 62.6
+      }
+    },
+    {
+      "dateTime": "2024-04-21T12:00:00Z",
+      "condition": "sunny",
+      "conditionIcon": "☀️",
+      "temperature": {
+        "celsius": 21,
+        "fahrenheit": 69.8
+      }
+    }
+  ]
+}

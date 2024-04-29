@@ -1,0 +1,33 @@
+{
+  "name": "next-i18n-2024",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "next": "14.2.1",
+    "next-intl": "^3.11.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "rtl-detect": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/rtl-detect": "^1.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.1",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

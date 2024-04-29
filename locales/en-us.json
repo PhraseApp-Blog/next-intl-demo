@@ -1,0 +1,46 @@
+{
+  "units": {
+    "temperature": "fahrenheit"
+  },
+  "Layout": {
+    "metaData": {
+      "title": "Next.js Weather",
+      "description": "A weather app built with Next.js and next-intl"
+    }
+  },
+  "Header": {
+    "appTitle": "Next.js Weather",
+    "navLinks": {
+      "week": "This week",
+      "about": "About"
+    }
+  },
+  "WeatherAlerts": {
+    "title": "Weather Alerts"
+  },
+  "Home": {
+    "title": "Today's weather",
+    "userGreeting": "👋 Welcome, {name}!",
+    "sunny": "Sunny"
+  },
+  "Week": {
+    "metaData": {
+      "title": "This week's weather | Next.js Weather",
+      "description": "This week's weather forecast"
+    },
+    "title": "This week's weather",
+    "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
+    "dayDate": "{dayDate, date, longDay}",
+    "sunny": "Sunny",
+    "cloudy": "Cloudy",
+    "rainy": "Rainy",
+    "partlyCloudy": "Partly Cloudy",
+    "showers": "Showers",
+    "thunderstorms": "Thunderstorms"
+  },
+  "About": {
+    "title": "About",
+    "description": "This is a minimalistic mock weather app built with <linkToNext>Next.js</linkToNext>.",
+    "liveDuration": "We've been live for {duration, number, ::precision-integer} seconds."
+  }
+}
